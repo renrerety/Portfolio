@@ -1,0 +1,59 @@
+nav{
+    font-size: 40px;
+    color: rgb(86, 185, 185);
+    border-bottom: 5px solid rgb(153, 115, 43);
+
+}
+nav>ul{
+    list-style-type: none;
+    margin: 20px;
+    align-self: flex-end;
+    display: inline;
+    
+}
+li{
+    display: inline-flex;
+    float: right;
+    margin-top: 40px;
+    border: 5px solid rgb(87, 87, 87);
+    margin-right: 5px;
+    color: whitesmoke;
+}
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 7px 8px;
+    background-color: rgb(51, 51, 51);
+}
+li a:hover{
+    background-color: rgb(29, 28, 28);
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+}
+.name{
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.face{
+    float:left;
+    width: 150;
+    height: 150;
+    margin-left: 50px;
+}
+.container{
+    border: 5px solid green;
+    width: 20%;
+    height: 500px;
+}
+.cardTop{
+    border: 5px solid red;
+    height: 250px;
+}
