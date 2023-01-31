@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project-Rogue</title>
+  <link rel="stylesheet" href="style.css">
+  <nav>
+    <img src="Images/face.png" alt="face" class="face" width="159" height="150">
+    <div class="name">
+        Renaud Leveille <br>
+        Game programmer
+    </div>
+<img src="Images/Controller.png" alt="Controller" width="150" height="150" style="margin-left: 30%;"></li>
+<ul>
+    <li style="margin-right: 21%;"><a href="">Contact</a></li>
+    <li><a href="">About me</a></li>
+    <li><a href="">Skills</a></li>
+    <li><div class="dropdown">
+        <button class="dropbtn" onclick="location.href='index.html'" type="button" style="cursor:pointer;">Projects</button>
+        <div class="dropdown-content">
+          <a href="project-rogue.html">Project : Rogue</a>
+          <a href="space-paws.html">Space Paws</a>
+          <a href="infiltrate.html">Infiltrate</a>
+          <a href="delivery.html">Delivery</a>
+        </div>
+      </div></li>
+</ul>
+    </nav>
+</head>
+<body>
+  <img src="Images/space-paws_banner.png" alt="space paws banner" width="80%" class="center">
+  <div class="projectDesc"> <p>This project is a short single player puzzle game where the player can control 2 different character. This was my first video game project ever.</p> 
+  <hr>
+</div>
+  <div class="projectContainer">
+    <div class="projectCard">
+    <h1>Project content</h1>
+    <hr>
+      <h2>
+        <ul>
+          <li>13 differents items</li>
+          <li>2 weapons</li>
+          <li>1 map</li>
+          <li>1 boss</li>
+          <li>4 enemy type</li>
+        </ul>
+        </h2>
+    </div>
+    <div class="projectTxt">
+    I started this project in between two semesters as a way to try to apply to a real project 
+    what i have learned so far. This project also taught me many thing about properly planning my work and keeping track of what still needs to be done.
+    I also learned a lot of good practices when programming in Unity because i ran into performance issues really quick due to the big amount of entity at any given time on the map. <br>
+    </div>
+  </div>
+  <h1>Gameplay loop</h1>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Shoot enemies</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/shoot.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>The core gameplay is all about shooting enemies that spawn randomly around the player to try to survive and earn money.</p> 
+    <p>Killing enemies will reward the player with experience points and money.
+      Once the player has collected enough experience points, his character will level up</p>
+    </div>
+  </div>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Open chests</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/chest.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>The player can spend the money he earned killing ennemies by opening chest that gives a random item.</p> 
+    <p>A variety of items are available to the player</p>
+    <p>All chest start with a base cost and 25 and the cost will ramp-up for every map completed</p>
+    </div>
+  </div>
+  <div class="projectContainer" style="height: 370px;">
+    <div class="projectCard">
+    <h1>Activate the teleporter</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/teleporter.mp4" type="video/mp4" style="margin-top: -28px;"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>The player need to activate the teleporter obelisk in the map in order to progress to the next stage</p> 
+    <p>This will spawn a wave of enemy and awaken the map's boss.</p>
+    <p>The player needs to stay in a zone to charge the teleporter and kill the boss the open the portal</p>
+    </div>
+  </div>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Take the portal</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/Portal.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>The player can have to take to portal to proceed to the next stage</p> 
+    <p>The player will keep all items but loose his money. The difficulty multiplier will spike once the portal is traversed</p>
+    <p>The goal is to survive as long as possible</p>
+    </div>
+  </div>
+  <h1>Collectible system</h1>
+  <div class="projectDesc">
+  <p>Adding new items is pretty easy because of the collectible system and ICollectible interface i have implemented</p>
+</div>
+  <img src="Images//CollectibleScript.png" alt="CollectiblesScript" class="center">
+  <img src="Images/Icollectibles.png" alt="ICollectibles" class="center">
+
+  <h1>Items samples</h1>
+  <div class="projectDesc">
+  <p>Here are some examples of the items available to the player</p>
+  <hr>
+  <h1>Bag</h1>
+  <img src="Images/Bag.png" alt="Bag" class="center">
+  <hr>
+  <h1>Aboneminate</h1>
+  <img src="Images/aboneminate.png" alt="Aboneminate" class="center">
+  <hr>
+  <h1>Eternal Flame</h1>
+  <img src="Images/EternalFlame.png" alt="Eternal flame" class="center">
+  <hr>
+  <h1>Snowflake</h1>
+  <img src="Images/Snowflake.png" alt="Snowflake" class="center">
+  <hr>
+  <h1>Golem Core (Boss item)</h1>
+  <img src="Images/GolemCore.png" alt="Golem Core" class="center">
+  <hr>
+</div>
+</body>

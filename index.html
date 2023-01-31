@@ -9,18 +9,26 @@
         Renaud Leveille <br>
         Game programmer
     </div>
-<img src="Images/Controller.png" alt="Controller" width="150" height="150" style="margin-left: 15%;"></li>
+<img src="Images/Controller.png" alt="Controller" width="150" height="150" style="margin-left: 30%;"></li>
         <ul>
-            <li style="margin-right: 60px;"><a href="">Contact</a></li>
+            <li style="margin-right: 21%;"><a href="">Contact</a></li>
             <li><a href="">About me</a></li>
             <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
+            <li><div class="dropdown">
+                <button class="dropbtn" onclick="location.href='index.html'" type="button" style="cursor:pointer;">Projects</button>
+                <div class="dropdown-content">
+                  <a href="project-rogue.html">Project : Rogue</a>
+                  <a href="space-paws.html">Space Paws</a>
+                  <a href="infiltrate.html">Infiltrate</a>
+                  <a href="delivery.html">Delivery</a>
+                </div>
+              </div></li>
         </ul>
     </nav>
 </head>
 <body>
     <div class="container">
-        <div class="card">
+        <div class="card" onclick="location.href='project-rogue.html';"style="cursor:pointer;">
             <div class="cardTop"><video autoplay muted loop height="100%" width="100%">
                 <source src="Videos/Project Rogue trailer.mp4" type="video/mp4">
             </video></div>
@@ -40,7 +48,7 @@
                     
                 </div>
             </div>
-            <div class="card">
+            <div class="card" onclick="location.href='space-paws.html';"style="cursor:pointer;">
                 <div class="cardTop"><video autoplay muted loop height="100%" width="100%">
                     <source src="Videos/SpacePaws_demo.mp4" type="video/mp4">
                 </video></div>
@@ -55,13 +63,13 @@
                     <img src="Images/arrow.png" alt="arrow" class="arrow">
                 </div>
                     <div class="cardTail">
-                        Puzzle game in a space environnement where dogs and cats learn to work together !
+                        Puzzle game in a space environnement where a dog and a cat learn to work together !
                     </div>
         </div>
     </div>
 </div>
             <div class="container">
-                <div class="card">
+                <div class="card" onclick="location.href='infiltrate.html';"style="cursor:pointer;">
                     <div class="cardTop"><video autoplay muted loop height="100%" width="100%">
                         <source src="Videos/Infiltrate_demo.mp4" type="video/mp4">
                     </video></div>
@@ -76,11 +84,11 @@
                         <img src="Images/arrow.png" alt="arrow" class="arrow">
                     </div>
                         <div class="cardTail">
-                            FPS with stealth elements via sound detection and line of sight
+                            Action FPS demo level. Contains AI, weapon system and interactable objects
                         </div>
                     </div>
                 </div>
-                        <div class="card">
+                <div class="card" onclick="location.href='delivery.html';"style="cursor:pointer;">
                             <div class="cardTop"><video autoplay muted loop height="100%" width="100%">
                                 <source src="Videos/Delivery_demo.mp4" type="video/mp4">
                             </video></div>
@@ -95,7 +103,7 @@
                                 <img src="Images/arrow.png" alt="arrow" class="arrow">
                             </div>
                                 <div class="cardTail">
-                                    My first project working as a team, accumulate parcels from a minigame and delivers them
+                                    My first project working as a team, accumulate parcels from a minigame and deliver them
                                 </div>
         
     </div>
