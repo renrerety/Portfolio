@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project-Rogue</title>
+  <title>Space Paws</title>
   <link rel="stylesheet" href="style.css">
   <nav>
     <img src="Images/face.png" alt="face" class="face" width="159" height="150">
@@ -30,101 +30,50 @@
   <img src="Images/space-paws_banner.png" alt="space paws banner" width="80%" class="center">
   <div class="projectDesc"> <p>This project is a short single player puzzle game where the player can control 2 different character. This was my first video game project ever.</p> 
   <hr>
-</div>
-  <div class="projectContainer">
-    <div class="projectCard">
-    <h1>Project content</h1>
-    <hr>
-      <h2>
-        <ul>
-          <li>13 differents items</li>
-          <li>2 weapons</li>
-          <li>1 map</li>
-          <li>1 boss</li>
-          <li>4 enemy type</li>
-        </ul>
-        </h2>
-    </div>
-    <div class="projectTxt">
-    I started this project in between two semesters as a way to try to apply to a real project 
-    what i have learned so far. This project also taught me many thing about properly planning my work and keeping track of what still needs to be done.
-    I also learned a lot of good practices when programming in Unity because i ran into performance issues really quick due to the big amount of entity at any given time on the map. <br>
-    </div>
-  </div>
-  <h1>Gameplay loop</h1>
-  <div class="projectContainer" style="height: 310px;">
-    <div class="projectCard">
-    <h1>Shoot enemies</h1>
-    <hr>
-    <video autoplay muted loop height="100%" width="100%" src="Videos/shoot.mp4" type="video/mp4"> </video>
-    </div>
-    <div class="projectTxt" style="height: 300px;">
-    <p>The core gameplay is all about shooting enemies that spawn randomly around the player to try to survive and earn money.</p> 
-    <p>Killing enemies will reward the player with experience points and money.
-      Once the player has collected enough experience points, his character will level up</p>
-    </div>
-  </div>
-  <div class="projectContainer" style="height: 310px;">
-    <div class="projectCard">
-    <h1>Open chests</h1>
-    <hr>
-    <video autoplay muted loop height="100%" width="100%" src="Videos/chest.mp4" type="video/mp4"> </video>
-    </div>
-    <div class="projectTxt" style="height: 300px;">
-    <p>The player can spend the money he earned killing ennemies by opening chest that gives a random item.</p> 
-    <p>A variety of items are available to the player</p>
-    <p>All chest start with a base cost and 25 and the cost will ramp-up for every map completed</p>
-    </div>
-  </div>
-  <div class="projectContainer" style="height: 370px;">
-    <div class="projectCard">
-    <h1>Activate the teleporter</h1>
-    <hr>
-    <video autoplay muted loop height="100%" width="100%" src="Videos/teleporter.mp4" type="video/mp4" style="margin-top: -28px;"> </video>
-    </div>
-    <div class="projectTxt" style="height: 300px;">
-    <p>The player need to activate the teleporter obelisk in the map in order to progress to the next stage</p> 
-    <p>This will spawn a wave of enemy and awaken the map's boss.</p>
-    <p>The player needs to stay in a zone to charge the teleporter and kill the boss the open the portal</p>
-    </div>
-  </div>
-  <div class="projectContainer" style="height: 310px;">
-    <div class="projectCard">
-    <h1>Take the portal</h1>
-    <hr>
-    <video autoplay muted loop height="100%" width="100%" src="Videos/Portal.mp4" type="video/mp4"> </video>
-    </div>
-    <div class="projectTxt" style="height: 300px;">
-    <p>The player can have to take to portal to proceed to the next stage</p> 
-    <p>The player will keep all items but loose his money. The difficulty multiplier will spike once the portal is traversed</p>
-    <p>The goal is to survive as long as possible</p>
-    </div>
-  </div>
-  <h1>Collectible system</h1>
+  <h1>Features</h1>
+  <h2>Swapping characters</h1>
   <div class="projectDesc">
-  <p>Adding new items is pretty easy because of the collectible system and ICollectible interface i have implemented</p>
+    <p style="color: rgb(24, 169, 169);">The player can swap between the cat and the dog by pressing R. Both of them have different mechanics associated to them. For instance, the cat is allowed to use the jump pads while the dog can push crates.</p>
+    <p style="color: rgb(24, 169, 169);">Those mechanics allow the player to solve the puzzles by taking advantage of the mechanics available to the characters and swapping between them at the right moment</p>
+  </div>
+  <video autoplay muted loop height="100%" width="100%" src="Videos/Space-Paws/Switch_char.mp4" style="margin-bottom: 30px;" type="video/mp4"> </video>
+  <hr>
+  <h2>Follow request</h2>
+  <p style="color: rgb(24, 169, 169);">The player can press F at any time to make a follow request. This will create a pathfinding route for the character that is currently not being focused on so that he can join the active character.</p>
+  <p style="color: rgb(24, 169, 169); margin-bottom: 0px;">This mechanic allows to avoid breaking the flow of the game by making the player go to the same place twice.</p>
+  <video autoplay muted loop height="100%" width="100%" src="Videos/Space-Paws/Follow.mp4" style="margin-top: 30px;" type="video/mp4"> </video>
 </div>
-  <img src="Images//CollectibleScript.png" alt="CollectiblesScript" class="center">
-  <img src="Images/Icollectibles.png" alt="ICollectibles" class="center">
-
-  <h1>Items samples</h1>
+<hr style="margin-top:60px; margin-bottom:20px">
+  <h1>Gameplay mechanics</h1>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Pressure plates</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/Space-Paws/Push.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>Each of the puzzles contains one or more red plate on the ground</p> 
+    <p>The player needs to push a crate on each of the plates present in the room in order to open the door and progress to the next puzzle.</p>
+    </div>
+  </div>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Swap characters</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/Space-Paws/Swap.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>Some areas will be innacesible to the one of the characters. In that case the player will need to swap the character and solve a puzzle that will allow the other character to join him.</p>
+    <p>Only the dog can push the crates so levels can not be completed without him.</p> 
+    </div>
+  </div>
+  <hr style="margin-top: 50px; margin-bottom: 20px;">
   <div class="projectDesc">
-  <p>Here are some examples of the items available to the player</p>
+    <h1>Thoughts</h1>
+    <img src="Images/Space-paws_scenery.png" alt="Space-Paws_Scenery" class="center" style="margin-top: 60px;">
+    <p style="color: rgb(24, 169, 169);">Even if the visual style is pretty simple and i used some basic assets, i think this is my best looking project in term of visual because of the amount of time i spent messing with Post processing, finding assets that would blend well with the rest and making the 3D terrain for the background.</p>
+    <p style="color: rgb(24, 169, 169);">Due to the very limited knowledge i had in programming and working with game engines at the time of this project i'm actually pretty impressed looking back at it that i have managed to do this in the short amount of time i had.</p>
+    <p style="color: rgb(24, 169, 169); padding-bottom: 60px;">Even if it's not my most impressive project, it's certainly one of my favorite</p>
+  </div>
   <hr>
-  <h1>Bag</h1>
-  <img src="Images/Bag.png" alt="Bag" class="center">
-  <hr>
-  <h1>Aboneminate</h1>
-  <img src="Images/aboneminate.png" alt="Aboneminate" class="center">
-  <hr>
-  <h1>Eternal Flame</h1>
-  <img src="Images/EternalFlame.png" alt="Eternal flame" class="center">
-  <hr>
-  <h1>Snowflake</h1>
-  <img src="Images/Snowflake.png" alt="Snowflake" class="center">
-  <hr>
-  <h1>Golem Core (Boss item)</h1>
-  <img src="Images/GolemCore.png" alt="Golem Core" class="center">
-  <hr>
-</div>
 </body>
