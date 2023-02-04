@@ -1,28 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Infiltrate</title>
+  <title>Renaud Leveille | Game programmer</title>
   <link rel="stylesheet" href="style.css">
   <nav>
-    <img src="Images/face.png" alt="face" class="face" width="159" height="150">
+    <img src="Images/Controller.png" class="face">
     <div class="name">
         Renaud Leveille <br>
         Game programmer
     </div>
-<img src="Images/Controller.png" alt="Controller" width="150" height="150" style="margin-left: 30%;"></li>
-<ul>
-    <li style="margin-right: 21%;"><a href="">Contact</a></li>
-    <li><a href="">About me</a></li>
-    <li><a href="">Skills</a></li>
-    <li><div class="dropdown">
-        <button class="dropbtn" onclick="location.href='index.html'" type="button" style="cursor:pointer;">Projects</button>
-        <div class="dropdown-content">
-          <a href="project-rogue.html">Project : Rogue</a>
-          <a href="space-paws.html">Space Paws</a>
-          <a href="infiltrate.html">Infiltrate</a>
-          <a href="delivery.html">Delivery</a>
-        </div>
-      </div></li>
-</ul>
+    <h3 style="float:right;margin-top:60px;color:orange;">Portfolio</h3>
+        <ul>
+            <li style="margin-right: 21%;"><a href="">Contact</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Skills</a></li>
+            <li><div class="dropdown">
+                <button class="dropbtn" onclick="location.href='index.html'" type="button" style="cursor:pointer;">Projects</button>
+                <div class="dropdown-content">
+                  <a href="project-rogue.html">Project : Rogue</a>
+                  <a href="space-paws.html">Space Paws</a>
+                  <a href="infiltrate.html">Infiltrate</a>
+                  <a href="delivery.html">Delivery</a>
+                </div>
+              </div></li>
+        </ul>
     </nav>
 </head>
+<body>
+  <img src="Images/Infiltrate_banner.png" alt="project-rogue banner" width="80%" class="center">
+  <div class="projectDesc"> <p>This project is a demo FPS demo level. This was my first project using Unreal Engine and blueprints. My focus on this project was mainly on the AI system, weapons and interaction system</p> 
+  <hr>
+</div>
+  <div class="projectContainer">
+    <div class="projectCard">
+    <h1>Project content</h1>
+    <hr>
+      <h2>
+        <ul>
+          <li>3 weapons</li>
+          <li>Equipping weapons at runtime</li>
+          <li>1 boss</li>
+          <li>5 AI types</li>
+          <li>Sound detection</li>
+          <li>LOS detection</li>
+        </ul>
+        </h2>
+    </div>
+    <div class="projectTxt">
+    I started this project in between two semesters as a way to try to apply to a real project 
+    what i have learned so far. This project also taught me many thing about properly planning my work and keeping track of what still needs to be done.
+    I also learned a lot of good practices when programming in Unity because i ran into performance issues really quick due to the big amount of entity at any given time on the map. <br>
+    </div>
+  </div>
+  <h1>Features</h1>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Sound detection</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/Infiltrate/Sound_Detection.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>Enemies can react to nearby sounds made by the player.</p> 
+    <p>Different actions that the player make have different levels of sound broadcasting. For exemple shooting a gun can alert an entire room while walking will only alert nearby enemies.</p>
+    </div>
+  </div>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Line of sight</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/Infiltrate/LOS.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>Ennemies can react to what they see</p> 
+    <p>If the player walk if front of an ennemy they will lock onto him.</p>
+    <p>If the player break the LOS by walking behind an object, the AI will go to his last known position.</p>
+    </div>
+  </div>
+  <div class="projectContainer" style="height: 310px;">
+    <div class="projectCard">
+    <h1>Boss fight</h1>
+    <hr>
+    <video autoplay muted loop height="100%" width="100%" src="Videos/Infiltrate/Boss.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="projectTxt" style="height: 300px;">
+    <p>There is a boss at the end of the demo level.</p> 
+    <p>He has 5 differents attacks that deal AOE damage.</p>
+    <p>The AOE range shows up as red zone on the ground similar to the ones often4 seen in MMO's</p>
+    </div>
+  </div>
+  <div class="projectDesc">
+    <h1>Thoughts</h1>
+    <img src="Images/Infiltrate_scenery.png" alt="Space-Paws_Scenery" class="center" style="margin-top: 60px;">
+    <p style="color: rgb(24, 169, 169);">While the project content is pretty good by itself, the real challenge for me in this project came from the actual level design and some performance issues</p>
+    <p style="color: rgb(24, 169, 169);">Because of the sound detection and LOS system i implemented, my levels had to be designed in a very specific way to assure that the player is not getting overwhelmed by ennemies.</p>
+    <p style="color: rgb(24, 169, 169); padding-bottom: 60px;">I used a lot of external assets for level building in this project and that ultimately led to performance issues. To solve this problem i used a system that would load my levels on the go and unload the ones that had already been completed. I also had to mess with the lightmap and texture resolutions, as well as removing a lot of decorative lights in the scene</p>
+  </div>
+  </body>
