@@ -15,15 +15,6 @@ nav>ul{
     margin-top: 80px;
     margin-left: 500px;
 }
-@media screen and (max-width: 600px) {
-    nav>ul{
-        list-style-type: none;
-        display:flex;
-        position:absolute;
-        margin-left: -20px;
-        margin-top: 160px;
-    }
-}
 nav>ul>li{
     display: flex;
     float: right;
@@ -53,7 +44,8 @@ body{
     background-color: rgb(49, 48, 48);
     min-height: 200px;
     max-width: 1060px;
-    margin: 0 auto;
+    margin:0px;
+    margin-right: 0px;
     padding: 40px;
 }
 .center {
@@ -147,7 +139,6 @@ hr{
     margin-top: 50px;
     margin-left: 15px;
     display: flex; 
-    gap: 0px 0px; 
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -163,7 +154,7 @@ hr{
 }
 html{
     height: 100%;
-    background-color: rgb(39, 39, 39);;
+    background-color: rgb(39, 39, 39);
 }
 .projectDesc>hr{
     margin: auto;
@@ -308,4 +299,16 @@ a{
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: rgb(29, 28, 28);}
+  @media only screen and (max-width: 600px) {
+    nav>ul{
+        list-style-type: none;
+        display:flex;
+        position:absolute;
+        margin-left: -20px;
+        margin-top: 160px;
+    }
+    .container{
+        width: 510px;
+    }
+}
   
