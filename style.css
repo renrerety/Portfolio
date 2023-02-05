@@ -46,6 +46,8 @@ body{
     max-width: 1060px;
     margin:0px;
     margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 40px;
 }
 .center {
@@ -236,7 +238,7 @@ html{
 .projectTxt{
     color: rgb(24, 169, 169);
     font-size: 30px;
-    overflow: scroll;
+
     width: 550px;
     margin-left: 50px;
     padding: 0PX;
@@ -296,10 +298,12 @@ a{
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
+    /* Show the dropdown menu on hover */
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: rgb(29, 28, 28);}
-  @media only screen and (max-width: 2100px) {
+  
+  @media only screen and (max-width: 1200px) {
     nav>ul{
         list-style-type: none;
         display:flex;
@@ -309,6 +313,13 @@ a{
     }
     .container{
         width: 510px;
+    }
+    .projectTxt{
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    @media(hover: hover) and (pointer: fine) {
+        .dropdown:hover .dropdown-content {display: block;}
     }
 }
   
