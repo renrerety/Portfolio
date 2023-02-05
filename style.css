@@ -12,7 +12,17 @@ nav>ul{
     list-style-type: none;
     display: flex;
     position:absolute;
-    margin-top: 170px;
+    margin-top: 80px;
+    margin-left: 500px;
+}
+@media screen and (max-width: 600px) {
+    nav>ul{
+        list-style-type: none;
+        display:flex;
+        position:absolute;
+        margin-left: -20px;
+        margin-top: 160px;
+    }
 }
 nav>ul>li{
     display: flex;
@@ -24,6 +34,7 @@ nav>ul>li{
     word-break:normal;
     word-wrap: break-word;
     white-space: nowrap;
+    
 }
 li a{
     text-decoration: none;
@@ -53,7 +64,7 @@ body{
 }
 .name{
     position: absolute;
-    margin-left: 150px;
+    margin-left: 160px;
     margin-right: 300px;
     margin-top: 40px;
 }
@@ -297,3 +308,4 @@ a{
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: rgb(29, 28, 28);}
+  
