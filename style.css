@@ -3,28 +3,38 @@ nav{
     color: rgb(86, 185, 185);
     border-bottom: 5px solid rgb(153, 115, 43);
     height: 150px;
+    position: static;
+    overflow:visible;
+    white-space: nowrap;
+    margin-bottom: 100px;
 }
 nav>ul{
     list-style-type: none;
-    margin: 20px;
-    align-self: flex-end;
-    display: inline;
-    
+    display: flex;
+    position:absolute;
+    margin-top: 170px;
+    margin-left: 13%;
 }
 nav>ul>li{
-    display: inline-flex;
+    display: flex;
     float: right;
-    margin-top: 50px;
-    margin-bottom: 50px;
     border: 5px solid rgb(87, 87, 87);
     margin-right: 5px;
     color: whitesmoke;
+    padding-right: -50px;
+    word-break:normal;
+    word-wrap: break-word;
+    white-space: nowrap;
 }
 li a{
     text-decoration: none;
-    color: whitesmoke;
-    padding: 7px 8px;
     background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif ;
+    padding: 7px 8px;
+    border: none;
+    
 }
 li a:hover{
     background-color: rgb(29, 28, 28);
@@ -43,10 +53,10 @@ body{
     width: 100%;
 }
 .name{
-    float: left;
-    margin-left: 15px;
+    position: absolute;
+    margin-left: 150px;
     margin-right: 300px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .face{
     float:left;
@@ -137,8 +147,7 @@ hr{
     margin-left: 15px;
     display: flex; 
     gap: 0px 0px; 
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
     border: 5px solid rgb(89, 89, 89);
     background-color: rgb(39, 39, 39);
 }
@@ -226,7 +235,7 @@ html{
 .projectTxt{
     color: rgb(24, 169, 169);
     font-size: 30px;
-    word-wrap: break-word;
+    overflow: scroll;
     width: 550px;
     margin-left: 50px;
     padding: 0PX;
