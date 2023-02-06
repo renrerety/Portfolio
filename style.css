@@ -7,6 +7,7 @@ nav{
     overflow:visible;
     white-space: nowrap;
     margin-bottom: 100px;
+    padding-bottom: 5px;
 }
 nav>ul{
     list-style-type: none;
@@ -26,6 +27,10 @@ nav>ul>li{
     word-wrap: break-word;
     white-space: nowrap;
     
+}
+a{
+    text-decoration: none;
+    color: rgb(24, 169, 169);
 }
 li a{
     text-decoration: none;
@@ -49,6 +54,9 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
+}
+.CV{
+    float: right;
 }
 .center {
     display: block;
